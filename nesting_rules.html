@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Nested rules
+        </title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>List of nesting rules</h1>
+            </header>
+        <section>
+            <header>
+                <h2>Nesting rules</h2>
+            </header>
+                <p>
+                    The easiest way to understand nesting is to think of HTML tags as boxes that hold your content. 
+                    Your content can include text, images, etc. HTML tags are the boxes around the content. Sometimes, 
+                    you need to places boxes inside of other boxes. Those "inner" boxes are nested inside of others.
+                </p>
+        </section>
+        <section>
+            <header>
+                <h3>Do not do this:</h3>
+            </header>
+            Unordered list <code>&lt;ul&gt;</code> is not allowed as a child of <code>&lt;p&gt;</code>
+            <br>
+                <samp>
+                    <code>......
+                    &lt;p&gt;</code><br>
+                    <code>..........&lt;ul&gt;</code><br>
+                    <code>..............&lt;li&gt;</code><br>
+                    ..................Lemurs.<br>
+                    <code>..............&lt;/li&gt;</code><br>
+                    <code>..........&lt;/ul&gt;</code><br>
+                    <code>...... &lt;/p&gt;</code>
+                </samp>
+        </section>
+            <br>
+        <section>
+                <h3>Do this instead:</h3>
+                Use <code>&lt;div&gt;</code> instead of using <code>&lt;p&gt;</code>
+            <br>
+                <samp>
+                    <code>......&lt;div&gt;</code><br>
+                    <code>..........&lt;ul&gt;</code><br>
+                    <code>..............&lt;li&gt;</code><br>
+                    ..................Mangoes<br>
+                    <code>..............&lt;/li&gt;</code><br>
+                    <code>..........&lt;/ul&gt;</code><br>
+                    <code>......&lt;/div&gt;</code>
+                </samp>
+        </section>
+        </main>
+        <nav>
+            <a href="rules.html">Older post</a>
+        </nav>
+    </body>
+</html>

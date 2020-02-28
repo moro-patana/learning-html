@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Attribute rules
+        </title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>
+                    List of attribute rules
+                </h1>
+                Attribute rules are scripts that a user can define 
+                on datasets. They trigger automatically with incoming edits 
+                and can be used to constrain the attribute values allowed on fields 
+                or perform a calculation to derive a field's values.
+            </header>
+            <section>
+                <header>
+                    <h3>Do not do this:</h3>
+                </header>
+                <nav>
+                    <ul>
+                        <li>
+                            <code>......&lt;section id= section_jpg &gt;</code><br>
+                            <code>........&lt;header&gt;</code><br>
+                            <code>..........&lt;h2&gt;</code>As a JPEG<code>&lt;/h2&gt;</code><br>
+                            <code>............&lt;p&gt;</code>Joint Photographic Experts Group<code>&lt;/p&gt;</code><br>
+                            <code>........&lt;/header&gt;</code><br>
+                            <code>............&lt;img src=img/onja_crew.jpg alt=students&gt;</code><br>
+                        </li>
+                        
+                        <li>
+                           <code>......&lt;section id="SECTION_jpg"&gt;</code><br>
+                           <code>........&lt;header&gt;</code><br>
+                           <code>..........&lt;h2&gt;</code>As a JPEG<code>&lt;/h2&gt;</code><br>
+                           <code>............&lt;p&gt;</code>Joint Photographic Experts Group<code>&lt;/p&gt;</code><br>
+                           <code>........&lt;/header&gt;</code><br>
+                           <code>............&lt;img src="IMG/ONJA_CREW.jpg" alt="STUDENTS"&gt;</code><br>
+                        </li>
+                    </ul>
+            </nav>
+            </section>
+            <section>
+                <h3>Do this instead:</h3>
+                 <p>
+                  Attribute values must have quotes.
+                  Attribute names need to be lowercase.
+                 </p>
+                    <nav>
+                        <ul>
+                            
+                                
+                                    <li>
+                                        <code>......&lt;section id="section_jpg"&gt;</code><br>
+                                        <code>........&lt;header&gt;</code><br>
+                                        <code>..........&lt;h2&gt;</code>As a JPEG<code>&lt;/h2&gt;</code><br>
+                                        <code>............&lt;p&gt;</code>Joint Photographic Experts Group<code>&lt;/p&gt;</code><br>
+                                        <code>........&lt;/header&gt;</code><br>
+                                        <code>............&lt;img src="img/onja_crew.jpg" alt="students"&gt;</code><br>
+                                    </li>
+                                
+                            
+                            
+                                
+                                    <li>
+                                        <code>......&lt;section id="section_jpg"&gt;</code><br>
+                                        <code>........&lt;header&gt;</code><br>
+                                        <code>..........&lt;h2&gt;</code>As a JPEG<code>&lt;/h2&gt;</code><br>
+                                        <code>............&lt;p&gt;</code>Joint Photographic Experts Group<code>&lt;/p&gt;</code><br>
+                                        <code>........&lt;/header&gt;</code><br>
+                                        <code>............&lt;img src="img/onja_crew.jpg" alt="students"&gt;</code><br>
+                                    </li>
+                               
+                        </ul>
+             </nav>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <a href="rules.html">Older post</a>
+            </nav>
+          </footer>
+    </body>
+</html>
